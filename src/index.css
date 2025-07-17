@@ -1,0 +1,84 @@
+:root {
+  --lighttan: rgba(255, 248, 241, 1);
+  --tan: rgba(244, 207, 185, 1);
+  --darkpurple: rgba(19, 15, 25, 0.88);
+  --brown: rgba(98, 71, 58, 1);
+  --darkbrown: rgba(39, 22, 14, 1);
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+  background-color: rgba(255, 248, 241, 1)
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.startbutton {
+  text-align: center;
+  font-size: 48px;
+  margin: 40px 2px;
+  border-radius: 8px;
+  border-color: var(--darkpurple);
+  border-width: 0.15em;
+  border-style: solid;
+  transition: 0.2s;
+  padding: 0.35em 2em;
+  background-color: rgba(244, 207, 185, 1);
+  color: var(--brown);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.startbutton:hover {
+  background-color: var(--brown);
+  color: var(--lighttan);
+}
+
+.recipebtn-col {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipebtn {
+  text-align: center;
+  font-size: 24px;
+  margin: 25px 2px;
+  border-radius: 8px;
+  border-color: var(--darkpurple);
+  border-width: 0.15em;
+  border-style: solid;
+  transition: 0.5s ;
+  padding: 0.5em 2em;
+  background-color: rgba(244, 207, 185, 1);
+  color: var(--brown);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.recipebtn:hover {
+  background-color: var(--brown);
+  color: var(--lighttan);
+}
+
+.backbtn {
+  background-color: var(--lighttan);
+  border-color: var(--lighttan);
+  box-shadow: none;
+  border-style: solid;
+  transition: 0.2 ease-in-out;
+  cursor: pointer;
+}

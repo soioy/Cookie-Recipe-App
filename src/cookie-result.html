@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cookie Splitter</title>
+    <link rel="stylesheet" href="start.css" />
+    <script defer src="main.js"></script>
+  </head>
+
+  <body>
+
+    <div>
+      <input type="button" value="back-button" onclick="cookie_button()"/>
+    </div>
+
+    <div>
+      <input type="checkbox" id="1">
+      <label for="1">Butter needed: <span id="result-butter"></span> g</label>
+      <script>
+        // Get the value from localStorage
+        const n_butter = localStorage.getItem("n_butter");
+        // Display it in the span
+        document.getElementById("result-butter").textContent = n_butter ? n_butter : "N/A";
+      </script>
+    </div>
+
+    <div>
+      <input type="checkbox" id="2">
+      <label for="2">White Sugar needed: <span id="result-sugar"></span> g</label>
+      <script>
+        // Get the value from localStorage
+        const n_sugar = localStorage.getItem("n_sugar");
+        // Display it in the span
+        document.getElementById("result-sugar").textContent = n_sugar ? n_sugar : "N/A";
+      </script>
+    </div>
+
+    <div>
+      <input type="checkbox" id="3">
+      <label for="3">Brown Sugar needed: <span id="result-brown-sugar"></span> g</label>
+      <script>
+        // Get the value from localStorage
+        const n_brown_sugar = localStorage.getItem("n_brown_sugar");
+        // Display it in the span
+        document.getElementById("result-brown-sugar").textContent = n_brown_sugar ? n_brown_sugar : "N/A";
+      </script>
+    </div>
+
+    <div>
+      <input type="checkbox" id="4">
+      <label for="4">Eggs needed: <span id="result-eggs"></span></label>
+      <script>
+        // Get the value from localStorage
+        const n_eggs = localStorage.getItem("n_eggs");
+        // Display it in the span
+        document.getElementById("result-eggs").textContent = n_eggs ? n_eggs : "N/A";
+      </script>
+    </div>
+
+    <div>
+      <input type="checkbox" id="5">
+      <label for="5">Flour needed: <span id="result-flour"></span> g</label>
+      <script>
+        // Get the value from localStorage
+        const n_flour = localStorage.getItem("n_flour");
+        // Display it in the span
+        document.getElementById("result-flour").textContent = n_flour ? n_flour : "N/A";
+      </script>
+    </div>
+
+    <div>
+      <input type="checkbox" id="6">
+      <label for="6">Chocolate Chips needed: <span id="result-choc-chip"></span> g</label>
+      <script>
+        // Get the value from localStorage
+        const n_choc_chip = localStorage.getItem("n_choc_chip");
+        // Display it in the span
+        document.getElementById("result-choc-chip").textContent = n_choc_chip ? n_choc_chip : "N/A";
+      </script>
+    </div>
+
+    <div>
+      <input type="checkbox" id="7">
+      <label for="7">Baking Soda needed: <span id="result-baking-soda"></span> tsp</label>
+      <script>
+        // Get the value from localStorage
+        const n_baking_soda = localStorage.getItem("n_baking_soda");
+        // Display it in the span
+        document.getElementById("result-baking-soda").textContent = n_baking_soda ? n_baking_soda : "N/A";
+      </script>
+    </div>
+
+    <div>
+      <input type="checkbox" id="8">
+      <label for="8">Salt needed: <span id="result-salt"></span> tsp</label>
+      <script>
+        // Get the value from localStorage
+        const n_salt = localStorage.getItem("n_salt");
+        // Display it in the span
+        document.getElementById("result-salt").textContent = n_salt ? n_salt : "N/A";
+      </script> 
+    </div>
+
+    <div>
+      <input type="checkbox" id="9">
+      <label for="9">Vanilla Extract needed: <span id="result-vanilla"></span> tsp</label>
+      <script>
+        // Get the value from localStorage
+        const n_vanilla = localStorage.getItem("n_vanilla");
+        // Display it in the span
+        document.getElementById("result-vanilla").textContent = n_vanilla ? n_vanilla : "N/A";
+      </script>
+    </div>
+
+  </body>
+
+</html>

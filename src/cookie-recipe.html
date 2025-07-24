@@ -9,39 +9,42 @@
   </head>
 
   <body>
-    <button class="backbtn" value="back-button" onclick="start_button()"><img src="images/backbtn.PNG"></button>
-
-      <div class="center">
-        <div>
-          <p class="recipeheader">choc chip cookies</p>
-        </div>
-      </div>
-
-      <div class="center">
-        <div class="recipedesc">
-          <p>The classic choc chip cookie with just the right chewiness and flavor. Pretty good naked cookies if you don't have chocolate chips around as well!</p>
-        </div>
-      </div>
-
-      <div class="center">
-        <div class="number-input" min="1" step="1" value="1">
-          <button type="button" class="quantitybtn" onclick="decreasequanity()">
-            <span class="material-icons-outlined">-</span>
-          </button>
-          <div class="value">
-            <span class="number" id="cookie_num">1</span>
-            <span class="text">cookies</span>
+    <button class="backbtn" value="back-button" onclick="start_button()">
+      <img src="images/backbtn.PNG">
+    </button>
+    
+      <div class="col">
+        <div class="center">
+          <div>
+            <p class="recipeheader">choc chip cookies</p>
           </div>
-          <button type="button" class="quantitybtn" onclick="increasequanity()">
-            <span class="material-icons-outlined">+</span>
-          </button>
+        </div>
+
+        <div class="center">
+          <div class="recipedesc">
+            <p>The classic choc chip cookie with just the right chewiness and flavor. Pretty good naked cookies if you don't have chocolate chips around as well!</p>
+          </div>
+        </div>
+
+        <div class="center">
+          <div class="number-input" min="1" step="1" value="1">
+            <button type="button" class="quantitybtn" onclick="decreasequanity()">
+              <span class="material-icons-outlined">-</span>
+            </button>
+            <div class="value">
+              <span class="number" id="cookie_num">1</span>
+              <span class="text">cookies</span>
+            </div>
+            <button type="button" class="quantitybtn" onclick="increasequanity()">
+              <span class="material-icons-outlined">+</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="center">
+          <input type="button" class="calculatebtn"value="calculate" onclick="cookie_calculate()"/>
         </div>
       </div>
-      
-      <div class="center">
-        <input type="button" class="calculatebtn"value="calculate" onclick="cookie_calculate()"/>
-      </div>
-
   </body>
 
 </html>

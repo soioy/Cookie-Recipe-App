@@ -42,6 +42,7 @@ body {
   color: var(--brown);
   cursor: pointer;
   font-family: Dynapuff, sans-serif;
+  transition: cubic-bezier(1, 0, 0, 1)
 }
 
 .startbutton:hover {
@@ -49,10 +50,14 @@ body {
   color: var(--lighttan);
 }
 
+.startbutton:active {
+  transform: scale(0.95);
+}
+
 .recipebtn {
   text-align: center;
   font-size: 1.5rem;
-  margin: 1.563rem 0.125rem;
+  margin: 0.125rem 0.125rem;
   border-radius: 0.5rem;
   border-color: var(--darkpurple);
   border-width: 0.25rem;
@@ -63,11 +68,16 @@ body {
   color: var(--brown);
   cursor: pointer;
   font-family: Dynapuff, sans-serif;
+  transition:cubic-bezier(1, 0, 0, 1) ;
 }
 
 .recipebtn:hover {
   background-color: var(--brown);
   color: var(--lighttan);
+}
+
+.recipebtn:active {
+  transform: scale(0.97);
 }
 
 .backbtn {
@@ -77,6 +87,11 @@ body {
   border-style: solid;
   transition: 0.2 ease-in-out;
   cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.backbtn:active {
+  transform: scale(0.95);
 }
 
 .recipeheader {
@@ -84,6 +99,7 @@ body {
   font-size: 2.5rem;
   padding-bottom: 0.1rem;
   font-family: Dynapuff, sans-serif;
+  font-weight: bold;
   color: var(--darkbrown);
   margin-top: 0.125rem;
   margin-bottom: 0.125rem;
@@ -111,13 +127,23 @@ body {
   border-color: var(--darkpurple);
   border-width: 0.25rem;
   border-style: solid;
-  transition: 0.2s;
+  transition: cubic-bezier(1, 0, 0, 1);
   padding: 0.70rem 4rem;
   background-color: rgba(244, 207, 185, 1);
   color: var(--brown);
   cursor: pointer;
   font-family: Dynapuff, sans-serif;
 }
+
+.calculatebtn:hover {
+  background-color: var(--brown);
+  color: var(--lighttan);
+}
+
+.calculatebtn:active {
+  transform: scale(0.97);
+}
+
 
 .number-input {
   width: 18rem;
@@ -140,6 +166,7 @@ body {
   height: 3rem;
   font-size: 1.5rem;
   font-weight: bold;
+  color: var(--darkpurple);
   text-align: center;
   background: var(--lighttan);
   border-radius: 5rem;
@@ -150,6 +177,12 @@ body {
   justify-content: center;
   cursor: pointer;
   position: relative;
+  transition: transform 0.1s ease-in-out;
+}
+
+.quantitybtn:active {
+  transform: scale(0.95);
+  color: var(--brown);
 }
 
 .value {
@@ -175,4 +208,11 @@ body {
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--darkbrown);
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

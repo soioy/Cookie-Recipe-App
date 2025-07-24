@@ -1,17 +1,19 @@
 :root {
   --lighttan: rgba(255, 248, 241, 1);
+  --midtan: rgb(254, 231, 217);
   --tan: rgba(244, 207, 185, 1);
   --darkpurple: rgba(19, 15, 25, 0.88);
   --brown: rgba(98, 71, 58, 1);
   --darkbrown: rgba(39, 22, 14, 1);
 }
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif;
+  font-family: Dynapuff, sans-serif;
   margin: auto;
   max-width: 38rem;
   padding: 2rem;
-  background-color: rgba(255, 248, 241, 1)
+  background-color: var(--lighttan);
+  background-attachment: fixed; 
 }
 
 .logo {
@@ -28,18 +30,18 @@ body {
 
 .startbutton {
   text-align: center;
-  font-size: 48px;
-  margin: 40px 2px;
-  border-radius: 8px;
+  font-size: 3rem;
+  margin: 2.5rem 0.125rem;
+  border-radius: 0.5rem;
   border-color: var(--darkpurple);
-  border-width: 0.15em;
+  border-width: 0.35rem;
   border-style: solid;
   transition: 0.2s;
-  padding: 0.35em 2em;
+  padding: 0.70rem 4rem;
   background-color: rgba(244, 207, 185, 1);
   color: var(--brown);
-  font-weight: bold;
   cursor: pointer;
+  font-family: Dynapuff, sans-serif;
 }
 
 .startbutton:hover {
@@ -55,18 +57,18 @@ body {
 
 .recipebtn {
   text-align: center;
-  font-size: 24px;
-  margin: 25px 2px;
-  border-radius: 8px;
+  font-size: 1.5rem;
+  margin: 1.563rem 0.125rem;
+  border-radius: 0.5rem;
   border-color: var(--darkpurple);
-  border-width: 0.15em;
+  border-width: 0.35rem;
   border-style: solid;
-  transition: 0.5s ;
-  padding: 0.5em 2em;
-  background-color: rgba(244, 207, 185, 1);
+  transition: 0.2s;
+  padding: 0.70rem 4rem;
+  background-color: var(--tan);
   color: var(--brown);
-  font-weight: bold;
   cursor: pointer;
+  font-family: Dynapuff, sans-serif;
 }
 
 .recipebtn:hover {
@@ -75,10 +77,57 @@ body {
 }
 
 .backbtn {
-  background-color: var(--lighttan);
-  border-color: var(--lighttan);
+  background-color: transparent;
+  border-color: transparent;
   box-shadow: none;
   border-style: solid;
   transition: 0.2 ease-in-out;
   cursor: pointer;
+}
+
+.recipeheader {
+  text-align: center;
+  font-size: 2rem;
+  font-family: Dynapuff, sans-serif;
+  color: var(--darkbrown);
+  margin-top: 1rem;
+  
+}
+
+.recipedesc {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: Dynapuff, sans-serif;
+  color: var(--darkbrown);
+  margin-top: 0.5rem;
+  background-color: var(--tan);
+  border-radius: 0.5rem;
+}
+
+.recipe-col {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculatebtn {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1.563rem 0.125rem;
+  border-radius: 0.5rem;
+  border-color: var(--darkpurple);
+  border-width: 0.35rem;
+  border-style: solid;
+  transition: 0.2s;
+  padding: 0.70rem 4rem;
+  background-color: rgba(244, 207, 185, 1);
+  color: var(--brown);
+  cursor: pointer;
+  font-family: Dynapuff, sans-serif;
+}
+
+.cookie-deco {
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }

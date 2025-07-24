@@ -4,15 +4,32 @@
   <head>
     <meta charset="UTF-8" />
     <title>Cookie Splitter</title>
-    <link rel="stylesheet" href="start.css" />
+    <link rel="stylesheet" href="index.css" />
     <script defer src="main.js"></script>
   </head>
 
   <body>
     <button class="backbtn" value="back-button" onclick="start_button()"><img src="images/backbtn.PNG"></button>
-    <p>chocolate chip cookies</p>
-    <input type="number" id="cookie_num" required min="1" placeholder="# of cookies"/>
-    <input type="button" class="startbutton"value="calculate" onclick="cookie_calculate()"/>
+
+    <div class="cookie-deco">
+      <img src="images/cookie.PNG" alt="Cookie" width="387" length="387">
+    </div>
+    
+    <div class = "recipe-col"></div>
+    
+      <div class="recipeheader">
+        <p>choc chip cookies</p>
+      </div>
+      <div class="recipedesc">
+        <p>The classic choc chip cookie with just the right chewiness and flavor. Pretty good naked cookies if you don't have chocolate chips around as well!</p>
+      </div>
+      <div class="serving-row">
+        <label for="cookie_num">Cookie #: </label>
+        <input type="number" id="cookie_num" required min="1" placeholder="cookies cookies cookies"/>
+      </div>
+      
+      <input type="button" class="calculatebtn"value="calculate" onclick="cookie_calculate()"/>
+    </div>
   </body>
 
 </html>

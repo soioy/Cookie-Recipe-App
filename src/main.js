@@ -2,7 +2,7 @@ const myButton = document.getElementById("start");
 var portion = parseInt(document.getElementById("cookie_num"));
 
 function start_button(){
-  window.location.href = "recipebook.html";
+  window.location.href = "recipebook-screen.html";
 } 
 function cookie_button(){
   window.location.href = "cookie-recipe.html";

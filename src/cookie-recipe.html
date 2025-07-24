@@ -26,23 +26,30 @@
           </div>
         </div>
 
-        <div class="center">
-          <div class="number-input" min="1" step="1" value="1">
-            <button type="button" class="quantitybtn" onclick="decreasequanity()">
-              <span class="material-icons-outlined">-</span>
-            </button>
-            <div class="value">
-              <span class="number" id="cookie_num">1</span>
-              <span class="text">cookies</span>
+        <div class="bottom">
+          <div class="col">
+
+            <div class="center">
+
+              <div class="number-input" min="1" step="1" value="1">
+                <button type="button" class="quantitybtn" onclick="decreasequanity()">
+                  <span class="material-icons-outlined">-</span>
+                </button>
+                <div class="value">
+                  <span class="number" id="cookie_num">1</span>
+                  <span class="text">cookies</span>
+                </div>
+                <button type="button" class="quantitybtn" onclick="increasequanity()">
+                  <span class="material-icons-outlined">+</span>
+                </button>
+              </div>
             </div>
-            <button type="button" class="quantitybtn" onclick="increasequanity()">
-              <span class="material-icons-outlined">+</span>
-            </button>
+            
+              <div class="center">
+                <input type="button" class="calculatebtn"value="calculate" onclick="cookie_calculate()"/>
+              </div>
+
           </div>
-        </div>
-        
-        <div class="center">
-          <input type="button" class="calculatebtn"value="calculate" onclick="cookie_calculate()"/>
         </div>
       </div>
   </body>

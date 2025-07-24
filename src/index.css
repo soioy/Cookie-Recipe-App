@@ -34,7 +34,7 @@ body {
   margin: 2.5rem 0.125rem;
   border-radius: 0.5rem;
   border-color: var(--darkpurple);
-  border-width: 0.35rem;
+  border-width: 0.25rem;
   border-style: solid;
   transition: 0.2s;
   padding: 0.70rem 4rem;
@@ -49,19 +49,13 @@ body {
   color: var(--lighttan);
 }
 
-.recipebtn-col {
-  display: block;
-  justify-content: center;
-  align-items: center;
-}
-
 .recipebtn {
   text-align: center;
   font-size: 1.5rem;
   margin: 1.563rem 0.125rem;
   border-radius: 0.5rem;
   border-color: var(--darkpurple);
-  border-width: 0.35rem;
+  border-width: 0.25rem;
   border-style: solid;
   transition: 0.2s;
   padding: 0.70rem 4rem;
@@ -87,11 +81,12 @@ body {
 
 .recipeheader {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  padding-bottom: 0.1rem;
   font-family: Dynapuff, sans-serif;
   color: var(--darkbrown);
-  margin-top: 1rem;
-  
+  margin-top: 0.125rem;
+  margin-bottom: 0.125rem;
 }
 
 .recipedesc {
@@ -99,13 +94,11 @@ body {
   font-size: 1.2rem;
   font-family: Dynapuff, sans-serif;
   color: var(--darkbrown);
-  margin-top: 0.5rem;
-  background-color: var(--tan);
-  border-radius: 0.5rem;
+  margin-top: 0.125rem;
 }
 
-.recipe-col {
-  display: block;
+.center {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -116,7 +109,7 @@ body {
   margin: 1.563rem 0.125rem;
   border-radius: 0.5rem;
   border-color: var(--darkpurple);
-  border-width: 0.35rem;
+  border-width: 0.25rem;
   border-style: solid;
   transition: 0.2s;
   padding: 0.70rem 4rem;
@@ -126,8 +119,60 @@ body {
   font-family: Dynapuff, sans-serif;
 }
 
-.cookie-deco {
+.number-input {
+  width: 18rem;
+  height: 6.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  background: var(--midtan);
+  border-radius: 1rem;
+  border: none;
+  box-sizing: border-box;
+  margin-right: 0.5rem;
+  padding: 2rem;
   display: flex;
-  justify-content: right;
   align-items: center;
+  justify-content: space-between;
+}
+
+.quantitybtn {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background: var(--lighttan);
+  border-radius: 5rem;
+  border: none;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.value {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.number {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--darkbrown);
+}
+
+.text {
+  align-items: flex-end;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--darkbrown);
 }

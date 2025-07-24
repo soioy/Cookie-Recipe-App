@@ -1,6 +1,3 @@
-const myButton = document.getElementById("start");
-var portion = parseInt(document.getElementById("cookie_num"));
-
 function start_button(){
   window.location.href = "recipebook-screen.html";
 } 
@@ -10,36 +7,47 @@ function cookie_button(){
 function banana_button(){
   window.location.href = "banana-recipe.html";
 } 
-  
-/* 
-    w_sugar=100, 
-    b_sugar=110,
-    egg=1, 
-    flour=160,
-    choc_chip=175,
-    
-*/
-    /*   
-    nw_sugar = w_sugar/portion_amount,
-    nb_sugar = b_sugar/portion_amount,
-    n_egg = egg/portion_amount,
-    n_flour = flour/portion_amount,
-    nchoc_chip = choc_chip/portion_amount;
-    */
+
+
+let input = document.querySelector(".number-input");
+const min = input.getAttribute("min");                                                       
+const step = Number(input.getAttribute("step") || 1);
+var value = Number(input.getAttribute("value") || 0);
+let number = document.querySelector(".number");
+
+function increasequanity() {
+    if (value > min) {
+        value += step;
+    }
+    else {
+        value += step;
+    }
+    number.textContent = value;
+}
+
+function decreasequanity() {
+    if (value >= min && value - step >= min) {
+        value -= step;
+    }
+    else {
+        value = step;
+    }
+    number.textContent = value;
+}
 
 function cookie_calculate(){
     // portion is the number of cookies the user wants to make
-    let portion = parseInt(document.getElementById("cookie_num").value);
+    //let portion = parseInt(document.getElementById("cookie_num").value);
     
 
-    if (!portion || portion <= 0) {
+    if (!value || value <= 0) {
             alert("enter some damn cookies bruh.");
             input.focus();
             return;
         }
 
     const act_portion = 8;    
-    let portion_amount = portion / act_portion;
+    let portion_amount = value / act_portion;
 
     // calculate the portion of ingredients needed
     let butter = 114 * portion_amount,
@@ -101,3 +109,6 @@ function banana_calculate(){
     window.location.href = "cookie-result.html";
 }
 */
+
+
+  
